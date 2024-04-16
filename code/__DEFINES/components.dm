@@ -290,12 +290,6 @@
 #define COMSIG_IMPLANT_EXISTING_UPLINK "implant_uplink_exists"	//called on implants being implanted into someone with an uplink implant: (datum/component/uplink)
 	//This uses all return values of COMSIG_IMPLANT_OTHER
 
-// /obj/item/pda signals
-#define COMSIG_PDA_CHANGE_RINGTONE "pda_change_ringtone"		//called on pda when the user changes the ringtone: (mob/living/user, new_ringtone)
-	#define COMPONENT_STOP_RINGTONE_CHANGE 1
-#define COMSIG_PDA_CHECK_DETONATE "pda_check_detonate"
-	#define COMPONENT_PDA_NO_DETONATE 1
-
 // /obj/item/radio signals
 #define COMSIG_RADIO_NEW_FREQUENCY "radio_new_frequency"		//called from base of /obj/item/radio/proc/set_frequency(): (list/args)
 

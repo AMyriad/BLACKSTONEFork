@@ -106,26 +106,6 @@
 	var/mob/living/silicon/ai/AI = usr
 	AI.checklaws()
 
-/obj/screen/ai/pda_msg_send
-	name = "PDA - Send Message"
-	icon_state = "pda_send"
-
-/obj/screen/ai/pda_msg_send/Click()
-	if(..())
-		return
-	var/mob/living/silicon/ai/AI = usr
-	AI.cmd_send_pdamesg(usr)
-
-/obj/screen/ai/pda_msg_show
-	name = "PDA - Show Message Log"
-	icon_state = "pda_receive"
-
-/obj/screen/ai/pda_msg_show/Click()
-	if(..())
-		return
-	var/mob/living/silicon/ai/AI = usr
-	AI.cmd_show_message_log(usr)
-
 /obj/screen/ai/image_take
 	name = "Take Image"
 	icon_state = "take_picture"
