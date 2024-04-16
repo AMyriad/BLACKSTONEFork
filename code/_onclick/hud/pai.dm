@@ -200,16 +200,6 @@
 	using.screen_loc = ui_pai_state_laws
 	static_inventory += using
 
-// PDA message
-	using = new /obj/screen/pai/pda_msg_send()
-	using.screen_loc = ui_pai_pda_send
-	static_inventory += using
-
-// PDA log
-	using = new /obj/screen/pai/pda_msg_show()
-	using.screen_loc = ui_pai_pda_log
-	static_inventory += using
-
 // Take image
 	using = new /obj/screen/pai/image_take()
 	using.screen_loc = ui_pai_take_picture

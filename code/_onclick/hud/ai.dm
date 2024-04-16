@@ -238,18 +238,6 @@
 	using.hud = src
 	static_inventory += using
 
-//PDA message
-	using = new /obj/screen/ai/pda_msg_send()
-	using.screen_loc = ui_ai_pda_send
-	using.hud = src
-	static_inventory += using
-
-//PDA log
-	using = new /obj/screen/ai/pda_msg_show()
-	using.screen_loc = ui_ai_pda_log
-	using.hud = src
-	static_inventory += using
-
 //Take image
 	using = new /obj/screen/ai/image_take()
 	using.screen_loc = ui_ai_take_picture
