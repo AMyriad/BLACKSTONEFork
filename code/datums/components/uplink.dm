@@ -251,9 +251,6 @@ GLOBAL_LIST_EMPTY(uplinks)
 	master.mode = 0
 	return COMPONENT_STOP_RINGTONE_CHANGE
 
-/datum/component/uplink/proc/check_detonate()
-	return COMPONENT_PDA_NO_DETONATE
-
 // Radio signal responses
 
 /datum/component/uplink/proc/new_frequency(datum/source, list/arguments)

@@ -221,8 +221,6 @@
 #define ui_ai_announcement "SOUTH:6,WEST+7"
 #define ui_ai_shuttle "SOUTH:6,WEST+8"
 #define ui_ai_state_laws "SOUTH:6,WEST+9"
-#define ui_ai_pda_send "SOUTH:6,WEST+10"
-#define ui_ai_pda_log "SOUTH:6,WEST+11"
 #define ui_ai_take_picture "SOUTH:6,WEST+12"
 #define ui_ai_view_images "SOUTH:6,WEST+13"
 #define ui_ai_sensor "SOUTH:6,WEST+14"
@@ -240,8 +238,6 @@
 #define ui_pai_host_monitor "SOUTH:6,WEST+6"
 #define ui_pai_crew_manifest "SOUTH:6,WEST+7"
 #define ui_pai_state_laws "SOUTH:6,WEST+8"
-#define ui_pai_pda_send "SOUTH:6,WEST+9"
-#define ui_pai_pda_log "SOUTH:6,WEST+10"
 #define ui_pai_take_picture "SOUTH:6,WEST+12"
 #define ui_pai_view_images "SOUTH:6,WEST+13"
 

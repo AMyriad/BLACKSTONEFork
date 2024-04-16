@@ -182,9 +182,6 @@
 				var/obj/item/card/id/id_card
 				if(istype(W, /obj/item/card/id))
 					id_card = W
-				else
-					var/obj/item/pda/pda = W
-					id_card = pda.id
 				output_maintenance_dialog(id_card, user)
 				return
 			to_chat(user, "<span class='warning'>Invalid ID: Access denied.</span>")

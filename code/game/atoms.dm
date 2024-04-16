@@ -1114,8 +1114,6 @@
 			log_emote(log_text)
 		if(LOG_DSAY)
 			log_dsay(log_text)
-		if(LOG_PDA)
-			log_pda(log_text)
 		if(LOG_CHAT)
 			log_chat(log_text)
 		if(LOG_COMMENT)

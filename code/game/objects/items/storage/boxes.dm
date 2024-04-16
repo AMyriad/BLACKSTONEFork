@@ -11,7 +11,6 @@
  *		Prescription glasses and drinking glass boxes,
  *		Condiment bottle and silly cup boxes,
  *		Donkpocket and monkeycube boxes,
- *		ID and security PDA cart boxes,
  *		Handcuff, mousetrap, and pillbottle boxes,
  *		Snap-pops and matchboxes,
  *		Replacement light boxes.
@@ -525,16 +524,6 @@
 	new /obj/item/card/id/prisoner/five(src)
 	new /obj/item/card/id/prisoner/six(src)
 	new /obj/item/card/id/prisoner/seven(src)
-
-/obj/item/storage/box/seccarts
-	name = "box of PDA security cartridges"
-	desc = ""
-	illustration = "pda"
-
-/obj/item/storage/box/seccarts/PopulateContents()
-	new /obj/item/cartridge/detective(src)
-	for(var/i in 1 to 6)
-		new /obj/item/cartridge/security(src)
 
 /obj/item/storage/box/firingpins
 	name = "box of standard firing pins"

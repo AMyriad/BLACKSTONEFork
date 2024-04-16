@@ -1089,9 +1089,6 @@ GLOBAL_VAR_INIT(mobids, 1)
 		//update the datacore records! This is goig to be a bit costly.
 		replace_records_name(oldname,newname)
 
-		//update our pda and id if we have them on our person
-		replace_identification_name(oldname,newname)
-
 		for(var/datum/mind/T in SSticker.minds)
 			for(var/datum/objective/obj in T.get_all_objectives())
 				// Only update if this player is a target
@@ -1107,7 +1104,6 @@ GLOBAL_VAR_INIT(mobids, 1)
 /mob/proc/replace_identification_name(oldname,newname)
 	var/list/searching = GetAllContents()
 	var/search_id = 1
-	var/search_pda = 1
 
 	for(var/A in searching)
 		if( search_id && istype(A, /obj/item/card/id) )
@@ -1117,18 +1113,7 @@ GLOBAL_VAR_INIT(mobids, 1)
 				ID.update_label()
 				if(ID.registered_account?.account_holder == oldname)
 					ID.registered_account.account_holder = newname
-				if(!search_pda)
-					break
 				search_id = 0
-
-		else if( search_pda && istype(A, /obj/item/pda) )
-			var/obj/item/pda/PDA = A
-			if(PDA.owner == oldname)
-				PDA.owner = newname
-				PDA.update_label()
-				if(!search_id)
-					break
-				search_pda = 0
 
 /mob/proc/update_stat()
 	return

@@ -158,7 +158,7 @@ GLOBAL_LIST_INIT(jumpsuitlist, list(PREF_SUIT, PREF_SKIRT))
 //Uplink spawn loc
 #define UPLINK_RADIO	"Radio"
 #define UPLINK_PEN		"Pen" //like a real spy!
-GLOBAL_LIST_INIT(uplink_spawn_loc_list, list(UPLINK_PDA, UPLINK_RADIO, UPLINK_PEN))
+GLOBAL_LIST_INIT(uplink_spawn_loc_list, list(UPLINK_RADIO, UPLINK_PEN))
 
 	//Female Uniforms
 GLOBAL_LIST_EMPTY(female_clothing_icons)

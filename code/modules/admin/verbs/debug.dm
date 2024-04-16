@@ -208,15 +208,11 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 			id.update_label()
 
 			if(worn)
-				if(istype(worn, /obj/item/pda))
-					var/obj/item/pda/PDA = worn
-					PDA.id = id
-					id.forceMove(PDA)
-				else if(istype(worn, /obj/item/storage/wallet))
-					var/obj/item/storage/wallet/W = worn
-					W.front_id = id
-					id.forceMove(W)
-					W.update_icon()
+				(istype(worn, /obj/item/storage/wallet))
+				var/obj/item/storage/wallet/W = worn
+				W.front_id = id
+				id.forceMove(W)
+				W.update_icon()
 			else
 				H.equip_to_slot(id,SLOT_RING)
 

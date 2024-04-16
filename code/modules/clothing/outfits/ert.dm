@@ -179,11 +179,6 @@
 	if(visualsOnly)
 		return
 
-	var/obj/item/pda/heads/pda = H.r_store
-	pda.owner = H.real_name
-	pda.ownjob = "CentCom Official"
-	pda.update_label()
-
 	var/obj/item/card/id/W = H.wear_ring
 	W.access = get_centcom_access("CentCom Official")
 	W.access += ACCESS_WEAPONS
