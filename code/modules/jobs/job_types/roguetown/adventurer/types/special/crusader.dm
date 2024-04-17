@@ -40,7 +40,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/rogueweapon/sword/decorated
 	beltl = /obj/item/clothing/head/roguetown/helmet/heavy/crusader
-	neck = /obj/item/clothing/neck/roguetown/psicross/g
+	neck = /obj/item/clothing/neck/roguetown/psicross/gold
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/rich=1)
 
 	H.change_stat("endurance", 2)

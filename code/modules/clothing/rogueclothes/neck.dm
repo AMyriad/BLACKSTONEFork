@@ -1,22 +1,20 @@
 /obj/item/clothing/neck/roguetown
 	name = "translucent necklace"
-	desc = "A worthless, imperceptible trinket. You feel as if you should report seeing this."
+	desc = "A worthless, imperceptible trinket. You feel as if you should report seeing it."
 	icon = 'icons/roguetown/clothing/neck.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/neck.dmi'
 	bloody_icon_state = "bodyblood"
 
 
-	/// COIFS ///
-
 /obj/item/clothing/neck/roguetown/coif
 	name = "coif"
-	desc = "A simple cloth garment made to protect the head or neck from the elements."
+	desc = "A simple cloth garment, ."
 	icon_state = "coif"
 	item_state = "coif"
 
 	flags_inv = HIDEEARS | HIDEHAIR
 	slot_flags = ITEM_SLOT_NECK | ITEM_SLOT_HEAD
-	body_parts_covered = NECK |HAIR | EARS | HEAD
+	body_parts_covered = NECK | HAIR | EARS | HEAD
 	blocksound = SOFTHIT
 	armor = list("melee" = 12, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	adjustable = CAN_CADJUST
@@ -44,8 +42,8 @@
 					H.update_inv_head()
 
 /obj/item/clothing/neck/roguetown/coif/chain
-	name = "chain coif"
-	desc = "A mesh of steel chain, lightweight but durable."
+	name = "chain coif" // Hard to distinguish from one another until you examine them
+	desc = "A sturdy chain mesh forged from steel. Makes for a lightweight but durable headwear."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
 
@@ -59,18 +57,15 @@
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/neck/roguetown/coif/chain/iron
-	name = "iron chain coif"
-	desc = "A light mesh of iron chain, leightweight but durable."
+	name = "chain coif"
+	desc = "A sturdy chain mesh forged from iron. Makes for a lightweight but durable headwear."
 	icon_state = "ichaincoif"
 
 	smeltresult = /obj/item/ingot/iron
 
-	
-	/// ARMORS ///
-
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"
-	desc = "A sturdy piece of armor meant to shield the wearer's throat from harm."
+	desc = "An exceptionally durable piece of armor meant to shield the wearer's throat from harm."
 	icon_state = "bevor"
 
 	flags_inv = HIDEFACIALHAIR
@@ -96,12 +91,9 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
 
-
-	/// PSYCROSSES ///
-
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
-	desc = "A ward against evil."
+	desc = ""
 	icon_state = "psicross"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
@@ -131,6 +123,7 @@
 
 /obj/item/clothing/neck/roguetown/psicross/silver
 	name = "silver psycross"
+	desc = ""
 	icon_state = "psicrossiron"
 	sellprice = 50
 
@@ -167,9 +160,6 @@
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 100
-
-
-	/// AMULETS ///
 
 /obj/item/clothing/neck/roguetown/talkstone
 	name = "talkstone"
