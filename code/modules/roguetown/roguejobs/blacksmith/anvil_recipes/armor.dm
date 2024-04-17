@@ -8,10 +8,10 @@
 						/obj/item/clothing/suit/roguetown/armor/chainmail/iron)
 
 /datum/anvil_recipe/armor/ichaincoif
-	name = "chain coif"
+	name = "iron chain coif"
 	req_bar = /obj/item/ingot/iron
-	created_item = list(/obj/item/clothing/neck/roguetown/chaincoif/iron,
-	/obj/item/clothing/neck/roguetown/chaincoif/iron)
+	created_item = list(/obj/item/clothing/neck/roguetown/coif/chain/iron,
+	/obj/item/clothing/neck/roguetown/coif/chain/iron)
 
 /datum/anvil_recipe/armor/gorget
 	name = "iron gorget"
@@ -58,8 +58,8 @@
 /datum/anvil_recipe/armor/chaincoif
 	name = "chain coif"
 	req_bar = /obj/item/ingot/steel
-	created_item = list(/obj/item/clothing/neck/roguetown/chaincoif,
-						/obj/item/clothing/neck/roguetown/chaincoif)
+	created_item = list(/obj/item/clothing/neck/roguetown/coif/chain,
+						/obj/item/clothing/neck/roguetown/coif/chain)
 
 /datum/anvil_recipe/armor/chainglove
 	name = "chain gauntlets"
@@ -115,10 +115,10 @@
 	created_item = list(/obj/item/clothing/head/roguetown/helmet,
 						/obj/item/clothing/head/roguetown/helmet)
 
-/datum/anvil_recipe/armor/bervor
-	name = "steel bervor"
+/datum/anvil_recipe/armor/bevor
+	name = "steel bevor"
 	req_bar = /obj/item/ingot/steel
-	created_item = list(/obj/item/clothing/neck/roguetown/bervor)
+	created_item = list(/obj/item/clothing/neck/roguetown/bevor)
 
 /datum/anvil_recipe/armor/helmetsall
 	name = "sallet"

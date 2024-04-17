@@ -1,18 +1,23 @@
 /obj/item/clothing/neck/roguetown
-	name = "necklace"
-	desc = ""
+	name = "translucent necklace"
+	desc = "A worthless, imperceptible trinket. You feel as if you should report seeing this."
 	icon = 'icons/roguetown/clothing/neck.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/neck.dmi'
 	bloody_icon_state = "bodyblood"
 
+
+	/// COIFS ///
+
 /obj/item/clothing/neck/roguetown/coif
 	name = "coif"
+	desc = "A simple cloth garment made to protect the head or neck from the elements."
 	icon_state = "coif"
 	item_state = "coif"
-	flags_inv = HIDEEARS|HIDEHAIR
-	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
+
+	flags_inv = HIDEEARS | HIDEHAIR
+	slot_flags = ITEM_SLOT_NECK | ITEM_SLOT_HEAD
+	body_parts_covered = NECK |HAIR | EARS | HEAD
 	blocksound = SOFTHIT
-	body_parts_covered = NECK|HAIR|EARS|HEAD
 	armor = list("melee" = 12, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
@@ -38,82 +43,65 @@
 					H.update_inv_neck()
 					H.update_inv_head()
 
-
-
-/obj/item/clothing/neck/roguetown/chaincoif
+/obj/item/clothing/neck/roguetown/coif/chain
 	name = "chain coif"
+	desc = "A mesh of steel chain, lightweight but durable."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
-	flags_inv = HIDEEARS|HIDEHAIR
-	armor = list("melee" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 
+	blocksound = CHAINHIT
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 200
 	resistance_flags = FIRE_PROOF
-	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
-	body_parts_covered = NECK|HAIR|EARS|HEAD
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	blocksound = CHAINHIT
 	smeltresult = /obj/item/ingot/steel
 
-/obj/item/clothing/neck/roguetown/chaincoif/AdjustClothes(mob/user)
-	if(loc == user)
-		if(adjustable == CAN_CADJUST)
-			adjustable = CADJUSTED
-			if(toggle_icon_state)
-				icon_state = "[initial(icon_state)]_t"
-			flags_inv = null
-			body_parts_covered = NECK
-			if(ishuman(user))
-				var/mob/living/carbon/H = user
-				H.update_inv_neck()
-				H.update_inv_head()
-		else if(adjustable == CADJUSTED)
-			ResetAdjust(user)
-			flags_inv = HIDEEARS|HIDEHAIR
-			if(user)
-				if(ishuman(user))
-					var/mob/living/carbon/H = user
-					H.update_inv_neck()
-					H.update_inv_head()
-
-
-/obj/item/clothing/neck/roguetown/chaincoif/iron
+/obj/item/clothing/neck/roguetown/coif/chain/iron
+	name = "iron chain coif"
+	desc = "A light mesh of iron chain, leightweight but durable."
 	icon_state = "ichaincoif"
 
 	smeltresult = /obj/item/ingot/iron
 
-/obj/item/clothing/neck/roguetown/bervor
-	name = "bervor"
-	icon_state = "bervor"
+	
+	/// ARMORS ///
+
+/obj/item/clothing/neck/roguetown/bevor
+	name = "bevor"
+	desc = "A sturdy piece of armor meant to shield the wearer's throat from harm."
+	icon_state = "bevor"
+
 	flags_inv = HIDEFACIALHAIR
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/steel
-
 	max_integrity = 300
 	resistance_flags = FIRE_PROOF
-	slot_flags = ITEM_SLOT_NECK
-	body_parts_covered = NECK|EARS|MOUTH|NOSE
+	body_parts_covered = NECK | EARS | MOUTH | NOSE
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
 
 /obj/item/clothing/neck/roguetown/gorget
 	name = "gorget"
+	desc = "A "
 	icon_state = "gorget"
+
 	flags_inv = HIDEFACIALHAIR
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 	resistance_flags = FIRE_PROOF
-	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
 
+
+	/// PSYCROSSES ///
+
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
-	desc = ""
+	desc = "A ward against evil."
 	icon_state = "psicross"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
@@ -160,14 +148,16 @@
 			target.Knockdown(30)
 			target.Stun(30)
 
-/obj/item/clothing/neck/roguetown/psicross/silver/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning = FALSE, bypass_equip_delay_self = FALSE)
+/obj/item/clothing/neck/roguetown/psicross/silver/mob_can_equip(mob/living/M)
 	. = ..()
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
 		if(H.dna && H.dna.species)
 			if(istype(H.dna.species, /datum/species/werewolf))
+				to_chat(user, "<span class='userdanger'>SILVER! GET IT OFF!!</span>")
 				return FALSE
 	if(M.mind && M.mind.has_antag_datum(/datum/antagonist/vampirelord))
+		to_chat(user, "<span class='userdanger'>SILVER! HISSS!!!</span>")
 		return FALSE
 
 /obj/item/clothing/neck/roguetown/psicross/g
@@ -177,6 +167,9 @@
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 100
+
+
+	/// AMULETS ///
 
 /obj/item/clothing/neck/roguetown/talkstone
 	name = "talkstone"
