@@ -8,10 +8,9 @@
 
 /obj/item/clothing/neck/roguetown/coif
 	name = "coif"
-	desc = "A simple cloth garment, ."
+	desc = "A crude and simple garment, barely thick enough to protect from exposure to the elements."
 	icon_state = "coif"
 	item_state = "coif"
-
 	flags_inv = HIDEEARS | HIDEHAIR
 	slot_flags = ITEM_SLOT_NECK | ITEM_SLOT_HEAD
 	body_parts_covered = NECK | HAIR | EARS | HEAD
@@ -46,7 +45,6 @@
 	desc = "A sturdy chain mesh forged from steel. Makes for a lightweight but durable headwear."
 	icon_state = "chaincoif"
 	item_state = "chaincoif"
-
 	blocksound = CHAINHIT
 	armor = list("melee" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 200
@@ -57,17 +55,14 @@
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/neck/roguetown/coif/chain/iron
-	name = "chain coif"
-	desc = "A sturdy chain mesh forged from iron. Makes for a lightweight but durable headwear."
+	desc = ""
 	icon_state = "ichaincoif"
-
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"
-	desc = "An exceptionally durable piece of armor meant to shield the wearer's throat from harm."
+	desc = "A molded plate of steel meant to shield the wearer's neck, it's as durable as the forge that birthed it."
 	icon_state = "bevor"
-
 	flags_inv = HIDEFACIALHAIR
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/steel
@@ -81,7 +76,6 @@
 	name = "gorget"
 	desc = "A "
 	icon_state = "gorget"
-
 	flags_inv = HIDEFACIALHAIR
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
@@ -93,7 +87,7 @@
 
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
-	desc = ""
+	desc = "F"
 	icon_state = "psicross"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
@@ -126,6 +120,7 @@
 	desc = ""
 	icon_state = "psicrossiron"
 	sellprice = 50
+	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/neck/roguetown/psicross/silver/funny_attack_effects(mob/living/target, mob/living/user, nodmg)
 	. = ..()
@@ -153,30 +148,32 @@
 		to_chat(user, "<span class='userdanger'>SILVER! HISSS!!!</span>")
 		return FALSE
 
-/obj/item/clothing/neck/roguetown/psicross/g
+/obj/item/clothing/neck/roguetown/psicross/gold
 	name = "golden psycross"
 	desc = ""
 	icon_state = "psicrossg"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 100
+	smeltresult = /obj/item/ingot/gold
 
 /obj/item/clothing/neck/roguetown/talkstone
 	name = "talkstone"
-	desc = ""
+	desc = "Known in some lands as a polyglot's pendant, the sleeping stone within is said to imbue its wearer with thoughts of a thousand tongues."
 	icon_state = "talkstone"
 	item_state = "talkstone"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 98
 
-/obj/item/clothing/neck/roguetown/horus
-	name = "eye of horuz"
+/obj/item/clothing/neck/roguetown/xylix_medal
+	name = "eye of Xylix medallion"
 	desc = ""
-	icon_state = "horus"
+	icon_state = "xylix"
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 30
+	smeltresult = /obj/item/ingot/steel // Steel? Iron? Idk you decide
 
 /obj/item/clothing/neck/roguetown/shalal
 	name = "desert rider medal"
@@ -185,3 +182,4 @@
 	//dropshrink = 0.75
 	resistance_flags = FIRE_PROOF
 	sellprice = 15
+	smeltresult = /obj/item/ingot/steel

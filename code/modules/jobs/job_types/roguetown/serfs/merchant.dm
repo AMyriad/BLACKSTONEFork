@@ -6,13 +6,13 @@
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_SERF
-	allowed_races = list("Humen",
-	"Humen",
-	"Elf",
-	"Dwarf",
-	"Tiefling",
-	"Aasimar"
-	)
+	allowed_races = list(
+		"Humen",
+		"Elf",
+		"Dwarf",
+		"Tiefling",
+		"Aasimar"
+		)
 	tutorial = "You were born into wealth, learning from before you could talk about the basics of mathematics. Counting coins is a simple pleasure for any person, but you've made it an artform. These people are addicted to your wares and you are the literal beating heart of this economy: Dont let these filthy-covered troglodytes ever forget that."
 
 	display_order = JDO_MERCHANT
@@ -45,7 +45,7 @@
 		beltl = /obj/item/keyring/merchant
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
 		pants = /obj/item/clothing/under/roguetown/tights/sailor
-		neck = /obj/item/clothing/neck/roguetown/horus
+		neck = /obj/item/clothing/neck/roguetown/xylix_medal
 		armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
 		head = /obj/item/clothing/head/roguetown/chaperon
 		id = /obj/item/clothing/ring/gold
@@ -61,7 +61,7 @@
 		belt = /obj/item/storage/belt/rogue/leather/rope
 		beltl = /obj/item/roguekey/merchant
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
-		neck = /obj/item/clothing/neck/roguetown/horus
+		neck = /obj/item/clothing/neck/roguetown/xylix_medal
 		armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
 		pants = /obj/item/clothing/under/roguetown/tights/sailor
 		head = /obj/item/clothing/head/roguetown/chaperon
