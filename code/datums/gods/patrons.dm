@@ -27,7 +27,7 @@ GLOBAL_LIST_EMPTY(patronlist)
 	name = "Noc"
 	domain = "God of the Moon, Night, and Knowledge"
 	summary = "The Firstborn of Psydon, twin of Astrala, gifted man divine knowledge."
-	worshippers = " Magic Practitioners, Scholars"
+	worshippers = "Magic Practitioners, Scholars"
 
 /datum/patrongods/dendor
 	name = "Dendor"
@@ -48,7 +48,7 @@ GLOBAL_LIST_EMPTY(patronlist)
 /datum/patrongods/ravox
 	name = "Ravox"
 	domain = "God of War, Justice and Strength"
-	summary = "The strongest of Psydons children, he watches man from afar."
+	summary = "The strongest of Psydon's children, he watches man from afar."
 	worshippers = "Warriors, Sellswords & those who seek Justice"
 
 /datum/patrongods/necra
