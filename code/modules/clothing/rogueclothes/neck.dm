@@ -61,7 +61,7 @@
 
 /obj/item/clothing/neck/roguetown/bevor
 	name = "bevor"
-	desc = "A molded plate of steel meant to shield the wearer's neck, it's as durable as the forge that birthed it."
+	desc = "A molded plate of steel meant to shield the wearer's throat, it's as durable as the forge that birthed it."
 	icon_state = "bevor"
 	flags_inv = HIDEFACIALHAIR
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
@@ -145,7 +145,7 @@
 				to_chat(user, "<span class='userdanger'>SILVER! GET IT OFF!!</span>")
 				return FALSE
 	if(M.mind && M.mind.has_antag_datum(/datum/antagonist/vampirelord))
-		to_chat(user, "<span class='userdanger'>SILVER! HISSS!!!</span>")
+		to_chat(user, "<span class='userdanger'>SILVER! GET IT OFF!!</span>")
 		return FALSE
 
 /obj/item/clothing/neck/roguetown/psicross/gold
@@ -159,7 +159,7 @@
 
 /obj/item/clothing/neck/roguetown/talkstone
 	name = "talkstone"
-	desc = "Known in some lands as a polyglot's pendant, the sleeping stone within is said to imbue its wearer with thoughts of a thousand tongues."
+	desc = "Known in some lands as a polyglot's pendant, the sleeping stone within is said to imbue its wearer with ceaseless thoughts of a thousand tongues."
 	icon_state = "talkstone"
 	item_state = "talkstone"
 	//dropshrink = 0.75
